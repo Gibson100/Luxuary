@@ -14,5 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('User.index');
 });
+
+Route::view('/about','User.about');
+
+Route::view('/contact','User.contact');
+
+
+Route::view('/admin','Admin.admin');
+
+Route::view('/addstaff','Admin.add-staff');
+
+Route::view('/view-staff','Admin.view-staff');
+
+Route::view('/edit-staff','Admin.edit-staff');
+
+
+Route::view('/reception','Reception.reception');
+
+Route::view('/view-available','Reception.available-rooms');
+
+Route::view('/edit/room','Reception.edit-room');
