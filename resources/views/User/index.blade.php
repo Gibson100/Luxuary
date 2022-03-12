@@ -212,7 +212,7 @@
         </div>
     </div>
 
-    <div class="py-5 upcoming-events" style="background-image: url('/images/hero_1.jpg'); background-attachment: fixed;">
+    <div class="py-5 upcoming-events" style="background-image: url('images/hero_1.jpg'); background-attachment: fixed;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">

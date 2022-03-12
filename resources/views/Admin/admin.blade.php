@@ -72,12 +72,7 @@
                         <ul class="dropdown-menu dropdown-menu-default  ">
                             <li class="divider"> </li>
                             <li>
-                                <a href="lock_screen.html">
-                                    <i class="icon-lock text-dark"></i> Lock
-                                </a>
-                            </li>
-                            <li>
-                                <a href="login.html">
+                                <a href="/login">
                                     <i class="icon-logout text-dark"></i> Log Out </a>
                             </li>
                         </ul>
@@ -686,10 +681,6 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="faq.html" class="nav-link "><span class="title">Faq</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="lock_screen.html" class="nav-link "> <span class="title">Lock Screen</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
