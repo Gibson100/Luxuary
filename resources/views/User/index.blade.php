@@ -6,10 +6,9 @@
 
 <div class="site-wrap">
 
-
     <div class="slide-one-item home-slider owl-carousel">
 
-        <div class="site-blocks-cover overlay" style="background-image: url(/images/hero_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="site-blocks-cover overlay" style="background-image: url(/images/hero_1.jpg) !important;" data-aos="fade" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-7 text-center" data-aos="fade">
@@ -21,7 +20,7 @@
             </div>
         </div>
 
-        <div class="site-blocks-cover overlay" style="background-image: url(/images/hero_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="site-blocks-cover overlay" style="background-image: url(/images/hero_2.jpg) !important;" data-aos="fade" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-7 text-center" data-aos="fade">
@@ -32,7 +31,7 @@
             </div>
         </div>
 
-        <div class="site-blocks-cover overlay" style="background-image: url(/images/hero_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="site-blocks-cover overlay" style="background-image: url(/images/hero_3.jpg) !important;" data-aos="fade" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-7 text-center" data-aos="fade">
@@ -55,7 +54,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="hotel-room text-center">
-                        <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+                        <a href="#" class="d-block mb-0 thumbnail"><img src="/images/img_1.jpg" alt="Image" class="img-fluid"></a>
                         <div class="hotel-room-body">
                             <h3 class="heading mb-0"><a href="#">Standard Room</a></h3>
                             <strong class="price">$350.00 / per night</strong>
@@ -64,7 +63,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="hotel-room text-center">
-                        <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                        <a href="#" class="d-block mb-0 thumbnail"><img src="/images/img_2.jpg" alt="Image" class="img-fluid"></a>
                         <div class="hotel-room-body">
                             <h3 class="heading mb-0"><a href="#">Family Room</a></h3>
                             <strong class="price">$400.00 / per night</strong>
@@ -73,7 +72,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="hotel-room text-center">
-                        <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+                        <a href="#" class="d-block mb-0 thumbnail"><img src="/images/img_3.jpg" alt="Image" class="img-fluid"></a>
                         <div class="hotel-room-body">
                             <h3 class="heading mb-0"><a href="#">Single Room</a></h3>
                             <strong class="price">$255.00 / per night</strong>
@@ -83,7 +82,7 @@
 
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="hotel-room text-center">
-                        <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+                        <a href="#" class="d-block mb-0 thumbnail"><img src="/images/img_1.jpg" alt="Image" class="img-fluid"></a>
                         <div class="hotel-room-body">
                             <h3 class="heading mb-0"><a href="#">Deluxe Room</a></h3>
                             <strong class="price">$150.00 / per night</strong>
@@ -92,7 +91,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="hotel-room text-center">
-                        <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                        <a href="#" class="d-block mb-0 thumbnail"><img src="/images/img_2.jpg" alt="Image" class="img-fluid"></a>
                         <div class="hotel-room-body">
                             <h3 class="heading mb-0"><a href="#">Luxury Room</a></h3>
                             <strong class="price">$200.00 / per night</strong>
@@ -101,7 +100,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="hotel-room text-center">
-                        <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+                        <a href="#" class="d-block mb-0 thumbnail"><img src="/images/img_3.jpg" alt="Image" class="img-fluid"></a>
                         <div class="hotel-room-body">
                             <h3 class="heading mb-0"><a href="#">Single Room</a></h3>
                             <strong class="price">$155.00 / per night</strong>
@@ -123,11 +122,11 @@
                   <span class="icon-wrap">
                     <span class="icon icon-play"></span>
                   </span>
-                            <img src="images/img_2.jpg" alt="" class="img-fluid">
+                            <img src="/images/img_2.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
 
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid image-absolute">
+                    <img src="/images/img_1.jpg" alt="Image" class="img-fluid image-absolute">
 
                 </div>
                 <div class="col-md-5 ml-auto">
@@ -201,12 +200,6 @@
                         <h2 class="h5">Car Airport</h2>
                     </div>
                 </div>
-
-
-
-
-
-
 
             </div>
         </div>

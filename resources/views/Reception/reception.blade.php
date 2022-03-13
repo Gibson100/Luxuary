@@ -48,17 +48,6 @@
             </div>
             <!-- logo end -->
 
-            <form class="search-form-opened border-dark  bg-light" action="#" method="GET">
-                <div class="input-group ">
-                    <input type="text" class="form-control" placeholder="Search..." name="query">
-                    <span class="input-group-btn search-btn ">
-                          <a href="javascript:;" class="btn submit">
-                             <i class="icon-magnifier text-dark"></i>
-                           </a>
-                        </span>
-                </div>
-            </form>
-
 
             <!-- start header menu -->
             <div class="top-menu">
@@ -75,13 +64,9 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-default  ">
                             <li class="divider"></li>
+
                             <li>
-                                <a href="lock_screen.html">
-                                    <i class="icon-lock text-dark"></i> Lock
-                                </a>
-                            </li>
-                            <li>
-                                <a href="login.html">
+                                <a href="/logout">
                                     <i class="icon-logout text-dark"></i> Log Out </a>
                             </li>
                         </ul>
@@ -187,6 +172,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="card-body ">
                             <div class="table-wrap">
                                 <div class="table-responsive tblHeightSet small-slimscroll-style">

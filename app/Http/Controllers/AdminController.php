@@ -3,16 +3,89 @@
 namespace App\Http\Controllers;
 
 use App\Models\Booking;
+use App\Models\Enquiry;
+use App\Models\Room;
 use App\Models\Staff;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
+    const SINGLE = 1000;
+    const DOUBLE = 2000;
+    const FAMILY = 3000;
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
+
     public function index()
     {
+        $user = Auth::user()->role;
+        if ($user === 'Receptionist')
+        {
+            return redirect('/reception');
+        }
+
+
         $bookings = Booking::all();
 
-        return view('Admin.admin', compact('bookings'));
+        $available_rooms = $this->getAvailableRooms();
+        $latest_bookings = $this->getLatestBookings();
+        $total_earnings = $this->getTotalEarnings();
+        $total_enquiries =  $this->getTotalEnquiries();
+        $inquiries = Enquiry::all();
+
+        return view('Admin.admin', compact('bookings','available_rooms','latest_bookings','total_earnings','total_enquiries','inquiries'));
+    }
+
+    function getAvailableRooms()
+    {
+        $available_rooms = Room::all()
+            ->where('Status','=','Free')->count();
+
+        return $available_rooms;
+    }
+
+    function getLatestBookings()
+    {
+        $bookings = Booking::all()->sortByDesc('created_at')->first()->count();
+
+        return $bookings;
+    }
+
+    function getTotalEarnings()
+    {
+        $single_room_count = Booking::all()
+            ->where('RoomType','=','Single')
+            ->where('Status','=','Paid')
+            ->count();
+        $double_room_count = Booking::all()
+            ->where('RoomType','=','Double')
+            ->where('Status','=','Paid')
+            ->count();
+        $family_room_count = Booking::all()
+            ->where('RoomType','=','Family')
+            ->where('Status','=','Paid')
+            ->count();
+
+
+        $single = $single_room_count * self::SINGLE;
+        $double = $double_room_count * self::DOUBLE;
+        $family = $family_room_count * self::FAMILY;
+
+        return $single + $double + $family;
+    }
+
+    function getTotalEnquiries()
+    {
+        $enquiries = Enquiry::all()->count();
+
+        return $enquiries;
     }
 
     public function insert(Request $request)
@@ -33,18 +106,14 @@ class AdminController extends Controller
         ]);
 
 
-        $password = $request->password;
-
-        $password = md5($password);
-
         $data = new Staff();
+
         $data->FirstName = $request->FirstName;
         $data->LastName = $request->LastName;
         $data->Email = $request->Email;
         $data->Gender = $request->Gender;
         $data->MobileNumber = $request->MobileNumber;
         $data->Address = $request->Address;
-        $data->Password = $password;
         $data->Education = $request->Education;
         $data->Role = $request->Designation;
         $data->DOB = $request->DOB;

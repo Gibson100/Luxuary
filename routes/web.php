@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\RoomsController;
 use App\Http\Controllers\StaffController;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +23,13 @@ Route::get('/', function () {
     return view('User.index');
 });
 
-Route::view('/logout','User.about');
+Route::post('/inquiry',[EnquiryController::class,'index']);
+
+Route::get('/logout',function (){
+    Auth::logout();
+
+    return redirect('/login');
+});
 
 Route::view('/about','User.about');
 
@@ -30,7 +38,7 @@ Route::view('/contact','User.contact');
 Route::get('/admin',[AdminController::class,'index']);
 
 
-Route::post('/login',[\App\Http\Controllers\Auth\LoginController::class]);
+Route::post('/login',[LoginController::class]);
 
 Route::view('/addstaff','Admin.add-staff');
 

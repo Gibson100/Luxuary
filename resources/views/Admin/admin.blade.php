@@ -73,7 +73,7 @@
                         <ul class="dropdown-menu dropdown-menu-default  ">
                             <li class="divider"></li>
                             <li>
-                                <a href="/login">
+                                <a href="/logout">
                                     <i class="icon-logout text-dark"></i> Log Out </a>
                             </li>
                         </ul>
@@ -803,13 +803,11 @@
                             <span class="info-box-icon push-bottom"><i class="material-icons">style</i></span>
                             <div class="info-box-content">
                                 <span class="info-box-text">Available Rooms</span>
-                                <span class="info-box-number">450</span>
+                                <span class="info-box-number">{{$available_rooms}}</span>
                                 <div class="progress">
                                     <div class="progress-bar width-60"></div>
                                 </div>
-                                <span class="progress-description">
-					                    60% Increase in 28 Days
-					                  </span>
+
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -821,13 +819,10 @@
                             <span class="info-box-icon push-bottom"><i class="material-icons">card_travel</i></span>
                             <div class="info-box-content">
                                 <span class="info-box-text">New Booking</span>
-                                <span class="info-box-number">155</span>
+                                <span class="info-box-number">{{$latest_bookings}}</span>
                                 <div class="progress">
                                     <div class="progress-bar width-40"></div>
                                 </div>
-                                <span class="progress-description">
-					                    40% Increase in 28 Days
-					                  </span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -839,13 +834,10 @@
                             <span class="info-box-icon push-bottom"><i class="material-icons">phone_in_talk</i></span>
                             <div class="info-box-content">
                                 <span class="info-box-text">Inquiry</span>
-                                <span class="info-box-number">52</span>
+                                <span class="info-box-number">{{$total_enquiries}}</span>
                                 <div class="progress">
                                     <div class="progress-bar width-80"></div>
                                 </div>
-                                <span class="progress-description">
-					                    80% Increase in 28 Days
-					                  </span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -857,13 +849,10 @@
                             <span class="info-box-icon push-bottom"><i class="material-icons">monetization_on</i></span>
                             <div class="info-box-content">
                                 <span class="info-box-text">Total Earning</span>
-                                <span class="info-box-number">13,921</span><span>$</span>
+                                <span class="info-box-number">{{$total_earnings}}</span><span>$</span>
                                 <div class="progress">
                                     <div class="progress-bar width-60"></div>
                                 </div>
-                                <span class="progress-description">
-					                    60% Increase in 28 Days
-					                  </span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -873,44 +862,6 @@
                 </div>
             </div>
             <!-- end widget -->
-            <!-- chart start -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card card-box">
-                        <div class="card-head">
-                            <header>Chart Survey</header>
-                            <div class="tools">
-                                <a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
-                                <a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
-                                <a class="t-close btn-color fa fa-times" href="javascript:;"></a>
-                            </div>
-                        </div>
-                        <div class="card-body no-padding height-9">
-                            <div class="row text-center">
-                                <div class="col-sm-3 col-6">
-                                    <h4 class="margin-0">$ 209 </h4>
-                                    <p class="text-muted"> Today's Income</p>
-                                </div>
-                                <div class="col-sm-3 col-6">
-                                    <h4 class="margin-0">$ 837 </h4>
-                                    <p class="text-muted">This Week's Income</p>
-                                </div>
-                                <div class="col-sm-3 col-6">
-                                    <h4 class="margin-0">$ 3410 </h4>
-                                    <p class="text-muted">This Month's Income</p>
-                                </div>
-                                <div class="col-sm-3 col-6">
-                                    <h4 class="margin-0">$ 78,000 </h4>
-                                    <p class="text-muted">This Year's Income</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div id="area_line_chart" class="width-100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- start Payment Details -->
             <div class="row">
@@ -951,7 +902,7 @@
                                                     @if($booking->Status == 'Paid')
                                                         <span
                                                             class="label label-sm label-success">{{$booking->Status}}</span>
-                                                        @else
+                                                    @else
                                                         <span
                                                             class="label label-sm label-danger">{{$booking->Status}}</span>
                                                     @endif
@@ -963,7 +914,8 @@
                                                        class="btn btn-tbl-edit btn-xs">
                                                         <i class="fa fa-pencil"></i>
                                                     </a>
-                                                    <a href="/reception/delete/{{$booking->id}}"  class="btn btn-tbl-delete btn-xs">
+                                                    <a href="/reception/delete/{{$booking->id}}"
+                                                       class="btn btn-tbl-delete btn-xs">
                                                         <i class="fa fa-trash-o "></i>
                                                     </a>
                                                 </td>
@@ -992,139 +944,27 @@
                         <div class="card-body ">
                             <div class="row">
                                 <ul class="docListWindow small-slimscroll-style">
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-md-8 col-sm-8">
-                                                <div class="prog-avatar">
-                                                    <img src="assets/img/user/user1.jpg" alt="" width="40" height="40">
-                                                </div>
-                                                <div class="details">
-                                                    <div class="title">
-                                                        <a href="#">Rajesh Mishra</a>
-                                                        <p class="rating-text">Awesome!!! Highly recommend</p>
+                                    @foreach($inquiries as $inquiry)
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8">
+                                                    <div class="details">
+                                                        <div class="title">
+                                                            <a href="#">{{$inquiry->name}}</a>
+                                                            <p class="rating-text">{{$inquiry->message}}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 rating-style">
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star_half</i>
-                                                <i class="material-icons">star_border</i>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-md-8 col-sm-8">
-                                                <div class="prog-avatar">
-                                                    <img src="assets/img/user/user2.jpg" alt="" width="40" height="40">
-                                                </div>
-                                                <div class="details">
-                                                    <div class="title">
-                                                        <a href="#">Sarah Smith</a>
-                                                        <p class="rating-text">Very bad service :(</p>
-                                                    </div>
+                                                <div class="col-md-4 col-sm-4 rating-style">
+                                                    <i class="material-icons">star</i>
+                                                    <i class="material-icons">star</i>
+                                                    <i class="material-icons">star</i>
+                                                    <i class="material-icons">star_half</i>
+                                                    <i class="material-icons">star_border</i>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-sm-4 rating-style">
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star_half</i>
-                                                <i class="material-icons">star_border</i>
-                                                <i class="material-icons">star_border</i>
-                                                <i class="material-icons">star_border</i>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-md-8 col-sm-8">
-                                                <div class="prog-avatar">
-                                                    <img src="assets/img/user/user3.jpg" alt="" width="40" height="40">
-                                                </div>
-                                                <div class="details">
-                                                    <div class="title">
-                                                        <a href="#">John Simensh</a>
-                                                        <p class="rating-text"> Staff was good nd i'll come again</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 rating-style">
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-md-8 col-sm-8">
-                                                <div class="prog-avatar">
-                                                    <img src="assets/img/user/user4.jpg" alt="" width="40" height="40">
-                                                </div>
-                                                <div class="details">
-                                                    <div class="title">
-                                                        <a href="#">Priya Sarma</a>
-                                                        <p class="rating-text">The price I received was good value
-                                                            compared to other city hotels.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 rating-style">
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star_half</i>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-md-8 col-sm-8">
-                                                <div class="prog-avatar">
-                                                    <img src="assets/img/user/user5.jpg" alt="" width="40" height="40">
-                                                </div>
-                                                <div class="details">
-                                                    <div class="title">
-                                                        <a href="#">Serlin Ponting</a>
-                                                        <p class="rating-text">Not Satisfy !!!1</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 rating-style">
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star_border</i>
-                                                <i class="material-icons">star_border</i>
-                                                <i class="material-icons">star_border</i>
-                                                <i class="material-icons">star_border</i>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-md-8 col-sm-8">
-                                                <div class="prog-avatar">
-                                                    <img src="assets/img/user/user6.jpg" alt="" width="40" height="40">
-                                                </div>
-                                                <div class="details">
-                                                    <div class="title">
-                                                        <a href="#">Priyank Jain</a>
-                                                        <p class="rating-text">Good....</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 rating-style">
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star</i>
-                                                <i class="material-icons">star_half</i>
-                                                <i class="material-icons">star_border</i>
-                                            </div>
-                                        </div>
-                                    </li>
+                                        </li>
+                                    @endforeach
                                 </ul>
                                 <div class="full-width text-center p-t-10">
                                     <a href="#" class="btn purple btn-outline btn-circle margin-0">View All</a>

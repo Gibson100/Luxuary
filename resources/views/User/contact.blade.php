@@ -22,18 +22,19 @@
 
 
 
-                        <form action="#" class="p-5 bg-white">
+                        <form action="/inquiry" method="post" class="p-5 bg-white">
+                            @csrf
 
                             <div class="row form-group">
                                 <div class="col-md-12 mb-3 mb-md-0">
                                     <label class="font-weight-bold" for="fullname">Full Name</label>
-                                    <input type="text" id="fullname" class="form-control" placeholder="Full Name">
+                                    <input type="text" id="fullname" class="form-control" placeholder="Full Name" name="name">
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <label class="font-weight-bold" for="email">Email</label>
-                                    <input type="email" id="email" class="form-control" placeholder="Email Address">
+                                    <input type="email" id="email" class="form-control" placeholder="Email Address" name="email">
                                 </div>
                             </div>
 
@@ -41,7 +42,7 @@
                             <div class="row form-group">
                                 <div class="col-md-12 mb-3 mb-md-0">
                                     <label class="font-weight-bold" for="phone">Phone</label>
-                                    <input type="text" id="phone" class="form-control" placeholder="Phone #">
+                                    <input type="text" id="phone" class="form-control" placeholder="Phone #" name="phone">
                                 </div>
                             </div>
 
