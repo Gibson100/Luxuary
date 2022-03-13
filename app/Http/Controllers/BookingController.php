@@ -24,6 +24,7 @@ class BookingController extends Controller
             'RoomType' => 'required|max:10|string',
             'Address' => 'required|max:255|string',
             'Status' => 'required|max:10|string',
+            'checkout' => 'required|max:10|date',
 
         ]);
 
@@ -43,6 +44,7 @@ class BookingController extends Controller
         $data->Status = $request->Status;
         $data->Address = $request->Address;
         $data->RoomNumber = $assigned_room;
+        $data->Depart = $request->checkout . ' '. date('H:i:s');
 
         $data->save();
 
@@ -135,6 +137,20 @@ class BookingController extends Controller
 
         return redirect('/reception');
 
+    }
+
+    public function delete($bookingid,$roomno)
+    {
+
+        $data = Booking::findOrFail($bookingid);
+        $room = Room::findOrFail($roomno);
+
+        $room->status = "Free";
+        $room->save();
+
+        $data->delete();
+
+        return redirect('/reception');
     }
 
 

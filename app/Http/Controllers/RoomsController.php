@@ -9,9 +9,9 @@ use Illuminate\Http\Request;
 class RoomsController extends Controller
 {
 
-    public function  index()
+    public function index()
     {
-        $rooms = Room::all();
+        $bookings = Booking::all();
 
         //dd($bookings[0]['id']);
 
@@ -19,7 +19,13 @@ class RoomsController extends Controller
 
         //dd($rooms);
 
-        return view('Reception.reception',compact('rooms'));
+        return view('Reception.reception',compact('bookings'));
+    }
+
+    public  function view()
+    {
+        $bookings = Booking::all();
+        return view('Reception.available-rooms',compact('bookings'));
     }
 
 }

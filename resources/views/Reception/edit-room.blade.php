@@ -42,7 +42,6 @@
 <!-- END HEAD -->
 <body>
 <div>
-    <a href="\reception" class="btn-primary">Go back</a>
     <div class="row">
         <div class="col-sm-12 px-lg-5 mt-5">
             <div class="card-box">

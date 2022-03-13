@@ -187,45 +187,57 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="table-scrollable">
-                            <table class="table table-hover table-checkable order-column full-width" id="example4">
-                                <thead>
-                                <tr>
-                                    <th class="center"> Room Number</th>
-                                    <th class="center"> Type</th>
-                                    <th class="center"> AC/Non AC</th>
-                                    <th class="center"> Meal</th>
-                                    <th class="center"> Bed Capacity</th>
-                                    <th class="center"> Rent</th>
-                                    <th class="center">Status</th>
-
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($rooms as $room)
-
-
-                                    <tr class="odd gradeX">
-                                        <td class="center">{{$room->id}}</td>
-                                        <td class="center">{{$room->Type}}</td>
-                                        <td class="center">{{$room->AC_Non_AC}}</td>
-                                        <td class="center">{{$room->Meal}}</td>
-                                        <td class="center">{{$room->BedCapacity}}</td>
-                                        <td class="center">{{$room->Rent}}</td>
-                                        <td class="center">{{$room->Status}}</td>
-                                        <td class="center">
-                                            <a href="/reception/edit/room/{{$room->LuckyId}}" class="btn btn-tbl-edit btn-xs">
-                                                <i class="fa fa-pencil"></i>
-                                            </a>
-                                            <a class="btn btn-tbl-delete btn-xs">
-                                                <i class="fa fa-trash-o "></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-                                @endforeach
-                                </tbody>
-                            </table>
+                        <div class="card-body ">
+                            <div class="table-wrap">
+                                <div class="table-responsive tblHeightSet small-slimscroll-style">
+                                    <table class="table display product-overview mb-30" id="support_table5">
+                                        <thead>
+                                        <tr>
+                                            <th>Booking Id</th>
+                                            <th>Room Number</th>
+                                            <th>Name</th>
+                                            <th>Check In</th>
+                                            <th>Check Out</th>
+                                            <th>Status</th>
+                                            <th>Phone</th>
+                                            <th>Room Type</th>
+                                            <th>Edit</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($bookings as $booking)
+                                            <tr>
+                                                <td>{{$booking->id}}</td>
+                                                <td>{{$booking->RoomNumber}}</td>
+                                                <td>{{$booking->FirstName}}&nbsp&nbsp{{$booking->LastName}}</td>
+                                                <td>{{$booking->Arrive}}</td>
+                                                <td>{{$booking->Depart}}</td>
+                                                <td>
+                                                    @if($booking->Status == 'Paid')
+                                                        <span
+                                                            class="label label-sm label-success">{{$booking->Status}}</span>
+                                                    @else
+                                                        <span
+                                                            class="label label-sm label-danger">{{$booking->Status}}</span>
+                                                    @endif
+                                                </td>
+                                                <td>{{$booking->MobileNumber}}</td>
+                                                <td>{{$booking->RoomType}}</td>
+                                                <td>
+                                                    <a href="/reception/edit/room/{{$booking->id}}"
+                                                       class="btn btn-tbl-edit btn-xs">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a>
+                                                    <a href="/reception/delete/{{$booking->id}}/{{$booking->RoomNumber}}"  class="btn btn-tbl-delete btn-xs" onclick="return confirm('Do you want to continue with the deletion process?')">
+                                                        <i class="fa fa-trash-o "></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

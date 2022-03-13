@@ -143,6 +143,13 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-lg-12 p-t-10">
+                            <div>
+                                <label for="checkout">Checkout</label>
+                                <input type="date" name="checkout" id="checkout" required>
+                                <span>@error('checkout') {{$message}} @enderror</span>
+                            </div>
+                        </div>
                         <div class="col-lg-12 p-t-10 text-center">
                             <button type="submit"
                                     class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 m-r-20 btn-pink">

@@ -2,34 +2,34 @@
 <html lang="en">
 <!-- BEGIN HEAD -->
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta name="description" content="Responsive Admin Template" />
-    <meta name="author" content="SmartUniversity" />
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="Responsive Admin Template"/>
+    <meta name="author" content="SmartUniversity"/>
     <title>Spice Hotel | Bootstrap 4 Admin Dashboard Template + UI Kit</title>
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css"/>
     <!-- icons -->
-    <link href="/assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <!--bootstrap -->
-    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/plugins/summernote/summernote.css" rel="stylesheet">
     <!-- morris chart -->
-    <link href="/assets/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/morris/morris.css" rel="stylesheet" type="text/css"/>
     <!-- Material Design Lite CSS -->
     <link rel="stylesheet" href="/assets/plugins/material/material.min.css">
     <link rel="stylesheet" href="/assets/css/material_style.css">
     <!-- animation -->
     <link href="/assets/css/pages/animate_page.css" rel="stylesheet">
     <!-- Template Styles -->
-    <link href="/assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/css/theme-color.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/plugins.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/theme-color.css" rel="stylesheet" type="text/css"/>
     <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico"/>
 </head>
 <!-- END HEAD -->
 <body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md page-full-width header-white ">
@@ -41,16 +41,16 @@
             <div class="page-logo">
                 <a href="index.html">
                     <img alt="" src="assets/img/logo.jpg" class="rounded" height="38px" width="38px">
-                    <span class=" text-warning" >Luxuary</span> </a>
+                    <span class=" text-warning">Luxuary</span> </a>
             </div>
             <!-- logo end -->
 
-            <form class="search-form-opened border-dark  bg-light"  action="#" method="GET">
+            <form class="search-form-opened border-dark  bg-light" action="#" method="GET">
                 <div class="input-group ">
                     <input type="text" class="form-control" placeholder="Search..." name="query">
                     <span class="input-group-btn search-btn ">
                           <a href="javascript:;" class="btn submit">
-                             <i class="icon-magnifier text-dark" ></i>
+                             <i class="icon-magnifier text-dark"></i>
                            </a>
                         </span>
                 </div>
@@ -64,13 +64,14 @@
 
                     <!-- start manage user dropdown -->
                     <li class="dropdown dropdown-user">
-                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                            <img alt="" class="img-circle " src="assets/img/dp.jpg" />
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                           data-close-others="true">
+                            <img alt="" class="img-circle " src="assets/img/dp.jpg"/>
                             <span class="username username-hide-on-mobile myclass"> John </span>
                             <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-default  ">
-                            <li class="divider"> </li>
+                            <li class="divider"></li>
                             <li>
                                 <a href="/login">
                                     <i class="icon-logout text-dark"></i> Log Out </a>
@@ -86,12 +87,12 @@
             <div class="hor-menu hidden-sm hidden-xs">
                 <ul class="nav navbar-nav ">
                     <li class="mega-menu-dropdown ">
-                        <a href="" class="dropdown-toggle myclass" > <i class="material-icons">dashboard</i>  Dashboard
+                        <a href="" class="dropdown-toggle myclass"> <i class="material-icons">dashboard</i> Dashboard
                         </a>
 
                     </li>
                     <li class="mega-menu-dropdown ">
-                        <a href="" class="dropdown-toggle myclass">  <i class="material-icons">vpn_key</i> Rooms
+                        <a href="" class="dropdown-toggle myclass"> <i class="material-icons">vpn_key</i> Rooms
                             <i class="fa fa-angle-down"></i>
                             <span class="arrow "></span>
                         </a>
@@ -139,11 +140,6 @@
                                                         <span class="title">View All Staffs</span>
                                                     </a>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a href="/edit-staff" class="nav-link ">
-                                                        <span class="title">Edit Staff Details</span>
-                                                    </a>
-                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -151,7 +147,6 @@
                             </li>
                         </ul>
                     </li>
-
 
 
                 </ul>
@@ -165,7 +160,8 @@
         <div class="sidebar-container">
             <div class="sidemenu-container navbar-collapse collapse fixed-menu">
                 <div id="remove-scroll">
-                    <ul class="sidemenu page-header-fixed p-t-20" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                    <ul class="sidemenu page-header-fixed p-t-20" data-keep-expanded="false" data-auto-scroll="true"
+                        data-slide-speed="200">
                         <li class="sidebar-toggler-wrapper hide">
                             <div class="sidebar-toggler">
                                 <span></span>
@@ -175,15 +171,16 @@
                             <div class="user-panel">
                                 <div class="row">
                                     <div class="sidebar-userpic">
-                                        <img src="assets/img/dp.jpg" class="img-responsive" alt=""> </div>
+                                        <img src="assets/img/dp.jpg" class="img-responsive" alt=""></div>
                                 </div>
                                 <div class="profile-usertitle">
-                                    <div class="sidebar-userpic-name"> John Deo </div>
-                                    <div class="profile-usertitle-job"> Manager </div>
+                                    <div class="sidebar-userpic-name"> John Deo</div>
+                                    <div class="profile-usertitle-job"> Manager</div>
                                 </div>
                                 <div class="sidebar-userpic-btn">
 
-                                    <a class="tooltips" href="login.html" data-placement="top" data-original-title="Logout">
+                                    <a class="tooltips" href="login.html" data-placement="top"
+                                       data-original-title="Logout">
                                         <i class="material-icons">input</i>
                                     </a>
                                 </div>
@@ -307,12 +304,14 @@
                                     </a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a href="layout_full_width.html" class="nav-link "> <span class="title">Full Width</span>
+                                    <a href="layout_full_width.html" class="nav-link "> <span
+                                            class="title">Full Width</span>
                                         <span class="selected"></span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="layout_collapse.html" class="nav-link "> <span class="title">Collapse Menu</span>
+                                    <a href="layout_collapse.html" class="nav-link "> <span
+                                            class="title">Collapse Menu</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -324,7 +323,8 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="layout_mega_menu.html" class="nav-link "> <span class="title">Mega Menu</span>
+                                    <a href="layout_mega_menu.html" class="nav-link "> <span
+                                            class="title">Mega Menu</span>
                                     </a>
                                 </li>
                             </ul>
@@ -339,11 +339,13 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="contact_list.html" class="nav-link "> <span class="title">Contact List</span>
+                                    <a href="contact_list.html" class="nav-link "> <span
+                                            class="title">Contact List</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="contact_grid.html" class="nav-link "> <span class="title">Contact Grid</span>
+                                    <a href="contact_grid.html" class="nav-link "> <span
+                                            class="title">Contact Grid</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -632,7 +634,8 @@
                             </a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
-                                    <a href="fontawesome_icons.html" class="nav-link "> <span class="title">Font Awesome</span>
+                                    <a href="fontawesome_icons.html" class="nav-link "> <span
+                                            class="title">Font Awesome</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -640,13 +643,15 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="material_icons.html" class="nav-link "> <span class="title">Material Icon</span>
+                                    <a href="material_icons.html" class="nav-link "> <span
+                                            class="title">Material Icon</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:;" class="nav-link nav-toggle"> <i class="material-icons">description</i>
+                            <a href="javascript:;" class="nav-link nav-toggle"> <i
+                                    class="material-icons">description</i>
                                 <span class="title">Extra pages</span>
                                 <span class="arrow"></span>
                             </a>
@@ -936,158 +941,34 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Jens Brincker</td>
-                                            <td>23/05/2016</td>
-                                            <td>27/05/2016</td>
-                                            <td>
-                                                <span class="label label-sm label-success">paid</span>
-                                            </td>
-                                            <td>123456789</td>
-                                            <td>Single</td>
-                                            <td>
-                                                <a href="edit_booking.html" class="btn btn-tbl-edit btn-xs">
-                                                    <i class="fa fa-pencil"></i>
-                                                </a>
-                                                <button class="btn btn-tbl-delete btn-xs">
-                                                    <i class="fa fa-trash-o "></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Mark Hay</td>
-                                            <td>24/05/2017</td>
-                                            <td>26/05/2017</td>
-                                            <td>
-                                                <span class="label label-sm label-warning">unpaid </span>
-                                            </td>
-                                            <td>123456789</td>
-                                            <td>Double</td>
-                                            <td>
-                                                <a href="edit_booking.html" class="btn btn-tbl-edit btn-xs">
-                                                    <i class="fa fa-pencil"></i>
-                                                </a>
-                                                <button class="btn btn-tbl-delete btn-xs">
-                                                    <i class="fa fa-trash-o "></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Anthony Davie</td>
-                                            <td>17/05/2016</td>
-                                            <td>21/05/2016</td>
-                                            <td>
-                                                <span class="label label-sm label-success ">paid</span>
-                                            </td>
-                                            <td>123456789</td>
-                                            <td>Queen</td>
-                                            <td>
-                                                <a href="edit_booking.html" class="btn btn-tbl-edit btn-xs">
-                                                    <i class="fa fa-pencil"></i>
-                                                </a>
-                                                <button class="btn btn-tbl-delete btn-xs">
-                                                    <i class="fa fa-trash-o "></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>David Perry</td>
-                                            <td>19/04/2016</td>
-                                            <td>20/04/2016</td>
-                                            <td>
-                                                <span class="label label-sm label-danger">unpaid</span>
-                                            </td>
-                                            <td>123456789</td>
-                                            <td>King</td>
-                                            <td>
-                                                <a href="edit_booking.html" class="btn btn-tbl-edit btn-xs">
-                                                    <i class="fa fa-pencil"></i>
-                                                </a>
-                                                <button class="btn btn-tbl-delete btn-xs">
-                                                    <i class="fa fa-trash-o "></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Anthony Davie</td>
-                                            <td>21/05/2016</td>
-                                            <td>24/05/2016</td>
-                                            <td>
-                                                <span class="label label-sm label-success ">paid</span>
-                                            </td>
-                                            <td>123456789</td>
-                                            <td>Single</td>
-                                            <td>
-                                                <a href="edit_booking.html" class="btn btn-tbl-edit btn-xs">
-                                                    <i class="fa fa-pencil"></i>
-                                                </a>
-                                                <button class="btn btn-tbl-delete btn-xs">
-                                                    <i class="fa fa-trash-o "></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Alan Gilchrist</td>
-                                            <td>15/05/2016</td>
-                                            <td>22/05/2016</td>
-                                            <td>
-                                                <span class="label label-sm label-warning ">unpaid</span>
-                                            </td>
-                                            <td>123456789</td>
-                                            <td>King</td>
-                                            <td>
-                                                <a href="edit_booking.html" class="btn btn-tbl-edit btn-xs">
-                                                    <i class="fa fa-pencil"></i>
-                                                </a>
-                                                <button class="btn btn-tbl-delete btn-xs">
-                                                    <i class="fa fa-trash-o "></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>Mark Hay</td>
-                                            <td>17/06/2016</td>
-                                            <td>18/06/2016</td>
-                                            <td>
-                                                <span class="label label-sm label-success ">paid</span>
-                                            </td>
-                                            <td>123456789</td>
-                                            <td>Single</td>
-                                            <td>
-                                                <a href="edit_booking.html" class="btn btn-tbl-edit btn-xs">
-                                                    <i class="fa fa-pencil"></i>
-                                                </a>
-                                                <button class="btn btn-tbl-delete btn-xs">
-                                                    <i class="fa fa-trash-o "></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>Sue Woodger</td>
-                                            <td>15/05/2016</td>
-                                            <td>17/05/2016</td>
-                                            <td>
-                                                <span class="label label-sm label-danger">unpaid</span>
-                                            </td>
-                                            <td>123456789</td>
-                                            <td>Double</td>
-                                            <td>
-                                                <a href="edit_booking.html" class="btn btn-tbl-edit btn-xs">
-                                                    <i class="fa fa-pencil"></i>
-                                                </a>
-                                                <button class="btn btn-tbl-delete btn-xs">
-                                                    <i class="fa fa-trash-o "></i>
-                                                </button>
-                                            </td>
-                                        </tr>
+                                        @foreach($bookings as $booking)
+                                            <tr>
+                                                <td>{{$booking->id}}</td>
+                                                <td>{{$booking->FirstName}}&nbsp&nbsp{{$booking->LastName}}</td>
+                                                <td>{{$booking->Arrive}}</td>
+                                                <td>{{$booking->Depart}}</td>
+                                                <td>
+                                                    @if($booking->Status == 'Paid')
+                                                        <span
+                                                            class="label label-sm label-success">{{$booking->Status}}</span>
+                                                        @else
+                                                        <span
+                                                            class="label label-sm label-danger">{{$booking->Status}}</span>
+                                                    @endif
+                                                </td>
+                                                <td>{{$booking->MobileNumber}}</td>
+                                                <td>{{$booking->RoomType}}</td>
+                                                <td>
+                                                    <a href="/reception/edit/room/{{$booking->id}}"
+                                                       class="btn btn-tbl-edit btn-xs">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a>
+                                                    <a href="/reception/delete/{{$booking->id}}"  class="btn btn-tbl-delete btn-xs">
+                                                        <i class="fa fa-trash-o "></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
                                         </tbody>
                                     </table>
                                 </div>
@@ -1186,7 +1067,8 @@
                                                 <div class="details">
                                                     <div class="title">
                                                         <a href="#">Priya Sarma</a>
-                                                        <p class="rating-text">The price I received was good value compared to other city hotels.</p>
+                                                        <p class="rating-text">The price I received was good value
+                                                            compared to other city hotels.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1244,7 +1126,7 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="full-width text-center p-t-10" >
+                                <div class="full-width text-center p-t-10">
                                     <a href="#" class="btn purple btn-outline btn-circle margin-0">View All</a>
                                 </div>
                             </div>
@@ -1261,26 +1143,26 @@
 <!-- end page container -->
 
 <!-- start js include path -->
-<script src="/assets/plugins/jquery/jquery.min.js" ></script>
-<script src="/assets/plugins/popper/popper.min.js" ></script>
-<script src="/assets/plugins/jquery-blockui/jquery.blockui.min.js" ></script>
+<script src="/assets/plugins/jquery/jquery.min.js"></script>
+<script src="/assets/plugins/popper/popper.min.js"></script>
+<script src="/assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
 <script src="/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- bootstrap -->
-<script src="/assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
-<script src="/assets/plugins/sparkline/jquery.sparkline.min.js" ></script>
-<script src="/assets/js/pages/sparkline/sparkline-data.js" ></script>
+<script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="/assets/js/pages/sparkline/sparkline-data.js"></script>
 <!-- Common js-->
-<script src="/assets/js/app.js" ></script>
-<script src="/assets/js/layout.js" ></script>
-<script src="/assets/js/theme-color.js" ></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/layout.js"></script>
+<script src="/assets/js/theme-color.js"></script>
 <!-- material -->
 <script src="/assets/plugins/material/material.min.js"></script>
 <!-- animation -->
-<script src="/assets/js/pages/ui/animations.js" ></script>
+<script src="/assets/js/pages/ui/animations.js"></script>
 <!-- morris chart -->
-<script src="/assets/plugins/morris/morris.min.js" ></script>
-<script src="/assets/plugins/morris/raphael-min.js" ></script>
-<script src="/assets/js/pages/chart/morris/morris_home_data.js" ></script>
+<script src="/assets/plugins/morris/morris.min.js"></script>
+<script src="/assets/plugins/morris/raphael-min.js"></script>
+<script src="/assets/js/pages/chart/morris/morris_home_data.js"></script>
 <!-- end js include path -->
 </body>
 </html>
